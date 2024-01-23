@@ -1,0 +1,135 @@
+﻿/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+    background-color: #80836C;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #80836C;
+    margin: 0; /* Asegurarse de que no haya márgenes en el cuerpo del documento */
+}
+
+/* Estilos para el contenedor de la tabla */
+.container {
+
+    max-width: 100%;
+    margin: 20px auto; /* Ajusta el margen para centrar el contenido */
+}
+
+/* Estilos para el contenedor general */
+.marco_general {
+    background-color: #80836C;
+    padding: 15px; /* Ajusta el padding para crear espacio alrededor del contenido */
+    min-height: 100vh;
+}
+
+.marco_general h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+}
+
+/*boton volver a pagina principal*/
+
+.volver_pagina_principal {
+    position: absolute;
+    top:40px;
+    left:60px;
+}
+
+.btn-volver{
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.material-icons {
+    color: white;
+    opacity: 0.8;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+        .material-icons:hover {
+            background-color: transparent; /* Cambia el color de fondo al pasar el cursor */
+            transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+            transition: background-color 0.3s, transform 0.3s; /* Agrega una transición suave */
+            opacity: 0.15;
+        }
+
+        .material-icons.active {
+            background-color: transparent;
+            transform: scale(1.2);
+        }
+
+
+/*    boton grafica*/
+.Grafica {
+    position: absolute;
+    top: 40px; /* Ajusta la posición vertical del botón */
+    right: 60px; /* Ajusta la posición horizontal del botón */
+}
+
+    .btnGrafica {
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+
+
+/*estilos botones alineados dialog cuadro defs busqueda*/
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+}
+
+/*boton borra*/
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: auto; /* Agrega esta lÃ­nea para centrar horizontalmente */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content > div {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,85 @@
+﻿/* Estilos para el cuerpo */
+body {
+    background-color: #80836C;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    font-family:'Montserrat',sans-serif;
+}
+
+/* Estilos para los contenedores de los gráficos */
+.chart-container {
+    height: 300px;
+    margin-bottom: 7px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #ddbea9;
+    background-color: rgba(221, 190, 169, 0.2);
+    margin-left:120px;
+    padding: 10px 10px 30px 10px;
+}
+
+/* Estilos para el botón al proyecto*/
+.back-button {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    text-decoration: none;
+    
+    height: 40px;
+    background-color: transparent;
+    opacity: 0.8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+    margin-left: 20px;
+}
+
+    .back-button i {
+        color: #ffffff;
+        opacity: 0.8;
+        text-decoration: none;
+        font-size: 28px; /* Ajusta el tamaño del icono según tu preferencia */
+    }
+
+    .back-button:hover {
+        background-color: transparent; /* Cambia el color de fondo al pasar el cursor */
+        transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+        opacity: 0.15; /* Ajusta la opacidad según tu preferencia */
+    }
+
+    .back-button.active {
+        background-color: transparent;
+        transform: scale(1.2);
+        /* Puedes añadir más estilos aquí si es necesario */
+    }
+
+/* Estilos para el icono dentro del botón */
+.material-icons-round {
+    font-family: 'Material Icons Round';
+}
+
+/* Estilos para el gráfico circular */
+.pie-chart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los contenedores internos de los gráficos */
+.chart-inner-container {
+    width: 100%;
+    height: 100%;
+}
